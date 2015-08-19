@@ -1,0 +1,17 @@
+Name: STATS SVM
+Dialog-Specs: STATS_SVM.spd
+Command-Specs: STATS_SVM.xml
+Code-Files: STATS_SVM.R
+Misc-Files: extsyntax.css,markdown.html,IBMdialogicon.png
+Summary: Support Vector Machine
+Description: Construct a support vector machine and use it for predict
+ ions.  The procedure supports linear or nonlinear classifiers and reg
+ ression with four choices of kernels.  A grid search over the paramet
+ er space can be carried out.
+Author: JKP, IBM SPSS
+Version: 1.1.4
+Product-Version: 18
+Date: 5/12/14
+Plugins: R
+R-Packages: e1071
+Translation-Catalogues: lang
