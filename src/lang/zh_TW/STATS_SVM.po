@@ -1,0 +1,413 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_SVM.R:171
+msgid "SVM"
+msgstr ""
+"SVM"
+
+#: STATS_SVM.R:172
+msgid "SVM: Warnings"
+msgstr ""
+"SVM：警告"
+
+#: STATS_SVM.R:177
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"R %s 套件是必要套件，但無法載入。"
+
+#: STATS_SVM.R:189
+msgid "Prediction requires a dataset specification for output"
+msgstr ""
+"預測需要輸出的資料集規格"
+
+#: STATS_SVM.R:193
+msgid "A workspace specification is required for prediction"
+msgstr ""
+"預測需要工作區規格"
+
+#: STATS_SVM.R:197
+msgid "Workspace file could not be loaded"
+msgstr ""
+"無法載入工作區檔案"
+
+#: STATS_SVM.R:204
+msgid "No SVM model was found in the specified workspace"
+msgstr ""
+"在指定的工作區中找不到 SVM 模型"
+
+#: STATS_SVM.R:210
+msgid "No independent variables were specified.  At least one is required"
+msgstr ""
+"未指定自變數。需要至少一個"
+
+#: STATS_SVM.R:218
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"作用中資料集必須具有名稱，以使用此程序"
+
+#: STATS_SVM.R:222
+msgid "The output dataset name must not already be in use"
+msgstr ""
+"輸出資料集名稱不得已使用"
+
+#: STATS_SVM.R:267
+msgid "Incorrect class weights: weights must be specified as pairs of values and weights"
+msgstr ""
+"不正確的類別加權：加權必須指定為值及加權的配對"
+
+#: STATS_SVM.R:278
+msgid "Prediction variables measurement levels do not match estimation variables"
+msgstr ""
+"預測變數測量水準與預測變數不相符"
+
+#: STATS_SVM.R:315
+msgid "Ignoring workspace save request because using predict mode"
+msgstr ""
+"由於使用預測模式，忽略工作區儲存要求"
+
+#: STATS_SVM.R:345
+msgid "Tuning cannot be used if there is no dependent variable"
+msgstr ""
+"如果沒有依變數，則無法使用調整"
+
+#: STATS_SVM.R:374
+msgid "Dependent Variable"
+msgstr ""
+"依變數"
+
+#: STATS_SVM.R:375
+msgid "Independent Variables"
+msgstr ""
+"自變數"
+
+#: STATS_SVM.R:376
+msgid "SVM Type"
+msgstr ""
+"SVM 類型"
+
+#: STATS_SVM.R:377
+msgid "Kernel"
+msgstr ""
+"核心"
+
+#: STATS_SVM.R:378
+msgid "Model Source"
+msgstr ""
+"模型來源"
+
+#: STATS_SVM.R:379
+msgid "Scale Inputs"
+msgstr ""
+"尺度輸入"
+
+#: STATS_SVM.R:380
+msgid "Kernel Degree"
+msgstr ""
+"核心度"
+
+#: STATS_SVM.R:381
+msgid "Kernel Gamma"
+msgstr ""
+"核心 γ"
+
+#: STATS_SVM.R:382
+msgid "Kernel Coef0"
+msgstr ""
+"核心 Coef0"
+
+#: STATS_SVM.R:383
+msgid "Misclassification Cost"
+msgstr ""
+"錯誤分類成本"
+
+#: STATS_SVM.R:384
+msgid "Nu"
+msgstr ""
+"Nu"
+
+#: STATS_SVM.R:385
+msgid "Epsilon"
+msgstr ""
+"Epsilon"
+
+#: STATS_SVM.R:386
+msgid "Class Weights"
+msgstr ""
+"類別加權"
+
+#: STATS_SVM.R:387
+msgid "Number of Crossfolds"
+msgstr ""
+"交叉摺疊次數"
+
+#: STATS_SVM.R:388
+msgid "Output Dataset"
+msgstr ""
+"輸出資料集"
+
+#: STATS_SVM.R:389
+msgid "Result Workspace"
+msgstr ""
+"結果工作區"
+
+#: STATS_SVM.R:390
+msgid "Workspace Contents"
+msgstr ""
+"工作區內容"
+
+#: STATS_SVM.R:391
+msgid "Model Estimation Date"
+msgstr ""
+"模型估計日期"
+
+#: STATS_SVM.R:396
+msgid "<None>"
+msgstr ""
+"<無>"
+
+#: STATS_SVM.R:400
+msgid "New"
+msgstr ""
+"新建"
+
+#: STATS_SVM.R:402
+msgid "Yes"
+msgstr ""
+"是"
+
+#: STATS_SVM.R:402
+msgid "No"
+msgstr ""
+"否"
+
+#: STATS_SVM.R:404
+#: STATS_SVM.R:406
+#: STATS_SVM.R:408
+#: STATS_SVM.R:409
+#: STATS_SVM.R:410
+#: STATS_SVM.R:411
+#: STATS_SVM.R:412
+#: STATS_SVM.R:413
+#: STATS_SVM.R:414
+#: STATS_SVM.R:418
+#: STATS_SVM.R:419
+msgid "NA"
+msgstr ""
+"NA"
+
+#: STATS_SVM.R:415
+msgid "None"
+msgstr ""
+"無"
+
+#: STATS_SVM.R:420
+msgid "Clear"
+msgstr ""
+"清除"
+
+#: STATS_SVM.R:420
+msgid "Retain"
+msgstr ""
+"保留"
+
+#: STATS_SVM.R:426
+msgid "Some parameters were tuned from a list of choices"
+msgstr ""
+"透過選項清單調整部分參數"
+
+#: STATS_SVM.R:430
+#: STATS_SVM.R:431
+#: STATS_SVM.R:431
+msgid "Summary"
+msgstr ""
+"摘要"
+
+#: STATS_SVM.R:433
+msgid "Computations done by R package e1071"
+msgstr ""
+"由 R 套件 e1071 執行的計算"
+
+#: STATS_SVM.R:436
+msgid "Error"
+msgstr ""
+"錯誤"
+
+#: STATS_SVM.R:437
+msgid "Dispersion"
+msgstr ""
+"離差"
+
+#: STATS_SVM.R:438
+msgid "Parameter Tuning Performance"
+msgstr ""
+"參數調整效能"
+
+#: STATS_SVM.R:439
+msgid "Tuning Performance"
+msgstr ""
+"調整效能"
+
+#: STATS_SVM.R:440
+msgid "Error is classification error or mean squared error depending on dependent variable type."
+msgstr ""
+"視依變數類型而定，錯誤屬於分類錯誤或均方差。"
+
+#: STATS_SVM.R:441
+msgid "Parameters actually used depend on kernel choice and svm type."
+msgstr ""
+"實際使用的參數視核心選擇及 svm 類型而定。"
+
+#: STATS_SVM.R:453
+msgid "Center"
+msgstr ""
+"置中"
+
+#: STATS_SVM.R:453
+msgid "Scale"
+msgstr ""
+"尺度"
+
+#: STATS_SVM.R:454
+msgid "Variable Scaling"
+msgstr ""
+"變數大小調整"
+
+#: STATS_SVM.R:455
+msgid "Scaling"
+msgstr ""
+"調整大小"
+
+#: STATS_SVM.R:455
+msgid "Variables"
+msgstr ""
+"變數"
+
+#: STATS_SVM.R:465
+#: STATS_SVM.R:468
+msgid "Accuracies"
+msgstr ""
+"精確度"
+
+#: STATS_SVM.R:466
+msgid "Total Accuracy"
+msgstr ""
+"總精確度"
+
+#: STATS_SVM.R:467
+msgid "Crossfold Accuracies"
+msgstr ""
+"交叉摺疊精確度"
+
+#: STATS_SVM.R:475
+msgid "Total MSE"
+msgstr ""
+"MSE 總計"
+
+#: STATS_SVM.R:476
+msgid "Squared Correlation, Predicted and Actual"
+msgstr ""
+"平方相關性、預測及實際"
+
+#: STATS_SVM.R:477
+msgid "Crossfold Mean Squared Errors"
+msgstr ""
+"交叉摺疊均方差"
+
+#: STATS_SVM.R:478
+msgid "Mean Squared Errors"
+msgstr ""
+"均方差"
+
+#: STATS_SVM.R:488
+#: STATS_SVM.R:489
+msgid "Feature Weights"
+msgstr ""
+"特性加權"
+
+#: STATS_SVM.R:490
+msgid "Number of support vectors: %s"
+msgstr ""
+"支援向量數目：%s"
+
+#: STATS_SVM.R:492
+msgid "Feature weights are not produced, because there are no support vectors"
+msgstr ""
+"未產生特性加權，因為沒有支援向量"
+
+#: STATS_SVM.R:503
+#: STATS_SVM.R:504
+msgid "Total"
+msgstr ""
+"總計"
+
+#: STATS_SVM.R:516
+#: STATS_SVM.R:517
+msgid "% Correct"
+msgstr ""
+"正確百分比"
+
+#: STATS_SVM.R:518
+#: STATS_SVM.R:522
+msgid "Confusion"
+msgstr ""
+"混淆"
+
+#: STATS_SVM.R:519
+msgid "Actual"
+msgstr ""
+"實際"
+
+#: STATS_SVM.R:520
+msgid "Fitted"
+msgstr ""
+"適配"
+
+#: STATS_SVM.R:523
+msgid "Percent Correct: %.3f"
+msgstr ""
+"正確百分比：%.3f"
+
+#: STATS_SVM.R:558
+msgid "The following predictors are missing from the input data: %s"
+msgstr ""
+"輸入資料中遺漏下列預報子：%s"
+
+#: STATS_SVM.R:576
+msgid "Class probabilities were requested but are not available"
+msgstr ""
+"已要求類別機率，但無法使用"
+
+#: STATS_SVM.R:588
+msgid "All cases have missing data.  No predictions are produced"
+msgstr ""
+"所有觀察值都具有遺漏資料。未產生預測"
+
+#: STATS_SVM.R:676
+msgid "End of procedure"
+msgstr ""
+"程序的結尾"
+
+#: STATS_SVM.R:703
+msgid "Message Number"
+msgstr ""
+"訊息號碼"
+
+
