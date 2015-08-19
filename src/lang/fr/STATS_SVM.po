@@ -1,0 +1,413 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_SVM.R:171
+msgid "SVM"
+msgstr ""
+"SVM"
+
+#: STATS_SVM.R:172
+msgid "SVM: Warnings"
+msgstr ""
+"SVM : Avertissements"
+
+#: STATS_SVM.R:177
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"Le pack R %s est requis mais n'a pas pu être chargé."
+
+#: STATS_SVM.R:189
+msgid "Prediction requires a dataset specification for output"
+msgstr ""
+"Les prévisions requièrent une spécification de jeu de données pour la sortie."
+
+#: STATS_SVM.R:193
+msgid "A workspace specification is required for prediction"
+msgstr ""
+"Une spécification d'espace de travail est requise pour les prévisions."
+
+#: STATS_SVM.R:197
+msgid "Workspace file could not be loaded"
+msgstr ""
+"Impossible de charger le fichier d'espace de travail."
+
+#: STATS_SVM.R:204
+msgid "No SVM model was found in the specified workspace"
+msgstr ""
+"Aucun modèle SVM (Support Vector Machine, séparateur à vaste marge) n'a été trouvé dans l'espace de travail spécifié."
+
+#: STATS_SVM.R:210
+msgid "No independent variables were specified.  At least one is required"
+msgstr ""
+"Aucune variable indépendante n'a été spécifiée. Au moins une variable est requise."
+
+#: STATS_SVM.R:218
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"Le jeu de données actif doit comporter un nom pour pouvoir utiliser cette procédure."
+
+#: STATS_SVM.R:222
+msgid "The output dataset name must not already be in use"
+msgstr ""
+"Le nom du jeu de données ne doit pas déjà avoir été attribué."
+
+#: STATS_SVM.R:267
+msgid "Incorrect class weights: weights must be specified as pairs of values and weights"
+msgstr ""
+"Pondérations de classe incorrectes : Les pondérations doivent être spécifiées en tant que paires de valeurs-pondérations."
+
+#: STATS_SVM.R:278
+msgid "Prediction variables measurement levels do not match estimation variables"
+msgstr ""
+"Les niveaux de mesure des variables de prévision ne correspondent pas à ceux des variables d'estimation."
+
+#: STATS_SVM.R:315
+msgid "Ignoring workspace save request because using predict mode"
+msgstr ""
+"Demande d'enregistrement de l'espace de travail ignorée en raison de l'utilisation du mode de prévision."
+
+#: STATS_SVM.R:345
+msgid "Tuning cannot be used if there is no dependent variable"
+msgstr ""
+"Optimisation non disponible en cas d'absence de variable dépendante."
+
+#: STATS_SVM.R:374
+msgid "Dependent Variable"
+msgstr ""
+"Variable dépendante"
+
+#: STATS_SVM.R:375
+msgid "Independent Variables"
+msgstr ""
+"Variables indépendantes"
+
+#: STATS_SVM.R:376
+msgid "SVM Type"
+msgstr ""
+"Type de SVM"
+
+#: STATS_SVM.R:377
+msgid "Kernel"
+msgstr ""
+"Noyau"
+
+#: STATS_SVM.R:378
+msgid "Model Source"
+msgstr ""
+"Source du modèle"
+
+#: STATS_SVM.R:379
+msgid "Scale Inputs"
+msgstr ""
+"Entrées d'échelle"
+
+#: STATS_SVM.R:380
+msgid "Kernel Degree"
+msgstr ""
+"Degré du noyau"
+
+#: STATS_SVM.R:381
+msgid "Kernel Gamma"
+msgstr ""
+"Gamma du noyau"
+
+#: STATS_SVM.R:382
+msgid "Kernel Coef0"
+msgstr ""
+"Valeur Coef0 dans le noyau"
+
+#: STATS_SVM.R:383
+msgid "Misclassification Cost"
+msgstr ""
+"Coûts de mauvaise réaffectation"
+
+#: STATS_SVM.R:384
+msgid "Nu"
+msgstr ""
+"Nu"
+
+#: STATS_SVM.R:385
+msgid "Epsilon"
+msgstr ""
+"Epsilon"
+
+#: STATS_SVM.R:386
+msgid "Class Weights"
+msgstr ""
+"Pondérations de classe"
+
+#: STATS_SVM.R:387
+msgid "Number of Crossfolds"
+msgstr ""
+"Nombre de partitions"
+
+#: STATS_SVM.R:388
+msgid "Output Dataset"
+msgstr ""
+"Jeu de données de sortie"
+
+#: STATS_SVM.R:389
+msgid "Result Workspace"
+msgstr ""
+"Espace de travail des résultats"
+
+#: STATS_SVM.R:390
+msgid "Workspace Contents"
+msgstr ""
+"Contenu de l'espace de travail"
+
+#: STATS_SVM.R:391
+msgid "Model Estimation Date"
+msgstr ""
+"Date d'estimation du modèle"
+
+#: STATS_SVM.R:396
+msgid "<None>"
+msgstr ""
+"<Aucun>"
+
+#: STATS_SVM.R:400
+msgid "New"
+msgstr ""
+"Nouveau"
+
+#: STATS_SVM.R:402
+msgid "Yes"
+msgstr ""
+"Oui"
+
+#: STATS_SVM.R:402
+msgid "No"
+msgstr ""
+"Non"
+
+#: STATS_SVM.R:404
+#: STATS_SVM.R:406
+#: STATS_SVM.R:408
+#: STATS_SVM.R:409
+#: STATS_SVM.R:410
+#: STATS_SVM.R:411
+#: STATS_SVM.R:412
+#: STATS_SVM.R:413
+#: STATS_SVM.R:414
+#: STATS_SVM.R:418
+#: STATS_SVM.R:419
+msgid "NA"
+msgstr ""
+"NA"
+
+#: STATS_SVM.R:415
+msgid "None"
+msgstr ""
+"Aucun(e)"
+
+#: STATS_SVM.R:420
+msgid "Clear"
+msgstr ""
+"Effacer"
+
+#: STATS_SVM.R:420
+msgid "Retain"
+msgstr ""
+"Conserver"
+
+#: STATS_SVM.R:426
+msgid "Some parameters were tuned from a list of choices"
+msgstr ""
+"Certains paramètres ont été définis à partir d'une liste de choix."
+
+#: STATS_SVM.R:430
+#: STATS_SVM.R:431
+#: STATS_SVM.R:431
+msgid "Summary"
+msgstr ""
+"Récapitulatif"
+
+#: STATS_SVM.R:433
+msgid "Computations done by R package e1071"
+msgstr ""
+"Calculs réalisés à l'aide du pack R e1071"
+
+#: STATS_SVM.R:436
+msgid "Error"
+msgstr ""
+"Erreur"
+
+#: STATS_SVM.R:437
+msgid "Dispersion"
+msgstr ""
+"Dispersion"
+
+#: STATS_SVM.R:438
+msgid "Parameter Tuning Performance"
+msgstr ""
+"Performances du réglage de paramètre"
+
+#: STATS_SVM.R:439
+msgid "Tuning Performance"
+msgstr ""
+"Performances du réglage"
+
+#: STATS_SVM.R:440
+msgid "Error is classification error or mean squared error depending on dependent variable type."
+msgstr ""
+"L'erreur est une erreur de classification ou une erreur quadratique selon le type de variable dépendante."
+
+#: STATS_SVM.R:441
+msgid "Parameters actually used depend on kernel choice and svm type."
+msgstr ""
+"Les paramètres actuellement utilisés dépendent des choix du noyau et du type de SVM."
+
+#: STATS_SVM.R:453
+msgid "Center"
+msgstr ""
+"Centre"
+
+#: STATS_SVM.R:453
+msgid "Scale"
+msgstr ""
+"Echelle"
+
+#: STATS_SVM.R:454
+msgid "Variable Scaling"
+msgstr ""
+"Mise à l'échelle de la variable"
+
+#: STATS_SVM.R:455
+msgid "Scaling"
+msgstr ""
+"Mise à l'échelle"
+
+#: STATS_SVM.R:455
+msgid "Variables"
+msgstr ""
+"Variables"
+
+#: STATS_SVM.R:465
+#: STATS_SVM.R:468
+msgid "Accuracies"
+msgstr ""
+"Exactitudes"
+
+#: STATS_SVM.R:466
+msgid "Total Accuracy"
+msgstr ""
+"Exactitude totale"
+
+#: STATS_SVM.R:467
+msgid "Crossfold Accuracies"
+msgstr ""
+"Exactitudes partitions croisées"
+
+#: STATS_SVM.R:475
+msgid "Total MSE"
+msgstr ""
+"Total MSE"
+
+#: STATS_SVM.R:476
+msgid "Squared Correlation, Predicted and Actual"
+msgstr ""
+"Carré de la corrélation (valeurs prédites et réelles)"
+
+#: STATS_SVM.R:477
+msgid "Crossfold Mean Squared Errors"
+msgstr ""
+"Erreurs quadratiques moyennes avec partition croisée"
+
+#: STATS_SVM.R:478
+msgid "Mean Squared Errors"
+msgstr ""
+"Moyenne quadratique des erreurs"
+
+#: STATS_SVM.R:488
+#: STATS_SVM.R:489
+msgid "Feature Weights"
+msgstr ""
+"Pondérations de fonction"
+
+#: STATS_SVM.R:490
+msgid "Number of support vectors: %s"
+msgstr ""
+"Nombre de vecteurs supports : %s"
+
+#: STATS_SVM.R:492
+msgid "Feature weights are not produced, because there are no support vectors"
+msgstr ""
+"Les pondérations de fonction ne sont pas générées, car il n'y a pas de vecteur support."
+
+#: STATS_SVM.R:503
+#: STATS_SVM.R:504
+msgid "Total"
+msgstr ""
+"Total"
+
+#: STATS_SVM.R:516
+#: STATS_SVM.R:517
+msgid "% Correct"
+msgstr ""
+"% Correct"
+
+#: STATS_SVM.R:518
+#: STATS_SVM.R:522
+msgid "Confusion"
+msgstr ""
+"Confusion"
+
+#: STATS_SVM.R:519
+msgid "Actual"
+msgstr ""
+"Réel"
+
+#: STATS_SVM.R:520
+msgid "Fitted"
+msgstr ""
+"Ajusté"
+
+#: STATS_SVM.R:523
+msgid "Percent Correct: %.3f"
+msgstr ""
+"Pourcentage correct : %.3f"
+
+#: STATS_SVM.R:558
+msgid "The following predictors are missing from the input data: %s"
+msgstr ""
+"Les prédicteurs suivants sont manquants dans les données d'entrée : %s"
+
+#: STATS_SVM.R:576
+msgid "Class probabilities were requested but are not available"
+msgstr ""
+"Des probabilités de classe ont été demandées, mais elles ne sont pas disponibles."
+
+#: STATS_SVM.R:588
+msgid "All cases have missing data.  No predictions are produced"
+msgstr ""
+"Toutes les observations comportent des données manquantes. Aucune prévision n'a été générée."
+
+#: STATS_SVM.R:676
+msgid "End of procedure"
+msgstr ""
+"Fin de la procédure"
+
+#: STATS_SVM.R:703
+msgid "Message Number"
+msgstr ""
+"Numéro de message"
+
+
