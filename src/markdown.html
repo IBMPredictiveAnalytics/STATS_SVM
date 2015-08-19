@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>STATS SVM Extension Command</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+
+
+
+
+</head>
+
+<body>
+<h1>STATS SVM Extension Command</h1>
+
+<p>Estimate an SVM model or make predictions from a previously
+estimated model</p>
+<div class="syntax">
+<p>STATS SVM 
+CMDMODE=ESTIMATE<sup>&#42;&#42;</sup> or PREDICT<br/>
+DEPENDENT=<em>dependent variable</em> INDEP=<em>independent variables</em>
+ID=<em>id variable</em><br/>
+SVMTYPE=AUTOMATIC<sup>&#42;&#42;</sup> or CCLASSIFICATION or NUCLASSIFICATION or
+ONECLASSIFICATION or EPSREGRESSION or NUREGRESSION<br/>
+KERNEL=LINEAR or POLYNOMIAL or RADIAL<sup>&#42;&#42;</sup> or SIGMOID<br/>
+WORKSPACEFILE=&ldquo;<em>workspace filespec containing the model for predict mode</em>&rdquo;</p>
+
+<p>/OPTIONS<br/>
+SCALE=YES<sup>&#42;&#42;</sup> or NO<br/>
+The follow parameters apply as appropriate (see below) and can be single
+values or a list of values to use in a grid search for the best model,
+which may be time consuming.<br/>
+DEGREE = <em>number</em><br/>
+GAMMA = <em>number</em><br/>
+COEF0 = <em>number</em><br/>
+COST = <em>number</em><br/>
+EPSILON = <em>number</em><br/>
+NU = <em>number</em></p>
+
+<p>CLASSWEIGHTS = <em>dependent variable value weight &hellip;</em><br/>
+NUMCROSSFOLDS = <em>number of cross folds in k-fold validation</em><br/>
+PROBPRED = YES or NO<sup>&#42;&#42;</sup> for class probability predictions<br/>
+MISSING = OMIT<sup>&#42;&#42;</sup> or FAIL</p>
+
+<p>/SAVE 
+DATASET=<em>new dataset name</em><br/>
+WORKSPACE = CLEAR<sup>&#42;&#42;</sup> or RETAIN<br/>
+WORKSPACEFILE = &ldquo;<em>file specification for saving model</em>&rdquo;<br/>
+DECISIONVALUES = YES or NO<sup>&#42;&#42;</sup></p>
+
+<p>/OUTPUT
+FEATUREWEIGHTS=YES<sup>&#42;&#42;</sup> or NO</p>
+
+
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+<p>STATS SVM /HELP.  prints this information and does nothing else.</p>
+
+<pre class="example"><code>STATS SVM DEPENDENT=Species INDEP=sepallength sepalwidth ID=obs
+/OPTIONS GAMMA = .1 .2 .3 COST=100
+/SAVE DATASET = predicted WORKSPACEFILE=&#39;C:/mymodels/iris.Rdata&#39;.
+
+STATS SVM CMDMODE=PREDICT WORKSPACEFILE=&#39;c:/mymodels/iris.Rdata&#39;
+/SAVE DATASET = newpredicted.
+</code></pre>
+
+<p>This command operates in two modes.  If <strong>CMDMODE</strong>=ESTIMATE, the model is built,
+and, optionally, the fitted values for the dependent variable are saved to a new
+dataset.  If <strong>CMDMODE</strong>=PREDICT, a previously estimated model is loaded from a file
+or is taken from the current workspace, and a new dataset with predicted values
+is generated.  All estimation parameters are supplied only in estimate mode.  </p>
+
+<p>In predict mode, no model parameters are specified, but the model source 
+is required.  Any estimation parameters specified are ignored, but the ID
+variable can be different from the estimation ID.
+The model independent variables are read from the Statistics active dataset.</p>
+
+<p>For CMDMODE=ESTIMATE, all the cases are considered the training dataset.  Select
+holdout cases before calling the procedure, and use predict mode to
+assess performance.</p>
+
+<p>If the dependent variable is categorical, the SVM is a classification model;
+otherwise it is a regression model, except that if there is no dependent
+variable, it can be used for detecting anomalies.  For classification
+models with more than two classes, a model is estimated for each pair
+of values and predictions are made by voting.</p>
+
+<p>Categorical predictors 
+are automatically converted to factors.  The SVM types are for classification
+or regression as their names indicate, defaulting to CCLASSIFICATION or 
+EPSREGRESSION.  If no dependent variable is specified, ONECLASSIFICATION 
+is assumed.</p>
+
+<p>For prediction, the source of the already estimated model is
+specified in the <strong>WORKSPACEFILE</strong> parameter of the first part of the 
+command.  It can be a quoted file specification or * to indicate that
+the model is in the current workspace as might be the case if the
+model was just estimated, and the workspace was retained.</p>
+
+<h2>OPTIONS</h2>
+
+<p>There are four kernel types with various parameters.  They are</p>
+
+<ul>
+<li><strong>LINEAR</strong>:     u&#39; &#42; v</li>
+<li><strong>POLYNOMIAL</strong>: (GAMMA &#42; u&#39; &#42; v + COEF0)<sup>&#42;DEGREE</sup></li>
+<li><strong>RADIAL</strong>:     exp(-GAMMA &#42; |u-v|<sup>&#42;2</sup> )</li>
+<li><strong>SIGMOID</strong>:     tanh(GAMMA * u&#39; * v + COEF0)</li>
+</ul>
+
+<p>where u and v are independent variable cases.</p>
+
+<p>The defaults are</p>
+
+<ul>
+<li><strong>DEGREE</strong> = 3 </li>
+<li><strong>GAMMA</strong> = 1/(number of independent variables) </li>
+<li><strong>COEF0</strong> = 0 </li>
+<li><strong>COST</strong> = 1 </li>
+<li><strong>EPSILON</strong> = .1</li>
+<li><strong>NU</strong> = .5</li>
+</ul>
+
+<p>NU is used in the NU- or ONE- SVM types.  0 &lt;= nu &lt; 1.</p>
+
+<p>The kernel parameters as well as NU and EPSILON can be specified 
+as single values or as lists of values.  If any parameter has 
+more than one value, a grid search is carried out to find the 
+best values for the model.  The specified or selected values 
+are displayed in an output table.</p>
+
+<p><strong>SCALE</strong> indicates whether the data should be scaled or not.  If YES,
+a table of the scaling factors is displayed.  When predicting,
+the scaling transform from the estimation data is applied to the new
+input data.</p>
+
+<p><strong>CLASSWEIGHTS</strong> can specify nonuniform weights for the factor levels.
+of a classification model.  It is written as pairs of factor 
+values and weights.  For example,
+<code>&#39;clerical&#39; .5 &#39;custodial&#39; 1 &#39;manager&#39; 2.</code><br/>
+The levels should be string or numeric corresponding to the 
+type of the dependent variable.  Omitted classes get a weight of 1.</p>
+
+<p><strong>MISSING</strong>=OMIT causes cases with any missing values to be omitted.
+<strong>MISSING</strong>=FAIL causes the procedure to stop if there are any missing values.</p>
+
+<p><strong>NUMCROSSFOLDS</strong> specifies k-fold cross validation.  If k &gt; 0, a table
+of accuracies is displayed.</p>
+
+<h2>SAVE</h2>
+
+<p>For both estimate and predict modes, the predicted values can be
+written to a new dataset specified by <strong>DATASET</strong>.  The dataset name
+must not already be in use.  If an ID variable was specified,
+it is included in the dataset.  Since missing value deletion
+may cause some cases not to appear in the dataset, an ID may
+be necessary in to match the dataset back to the input.</p>
+
+<p>If PROBPRED is YES at estimation time and it is a classification
+model, when a dataset is created in predict mode, the probability
+for each class is included in the output dataset.</p>
+
+<p><strong>WORKSPACEFILE</strong>, which applies only
+in estimate mode, specifies that the model be written to the 
+specified file.  </p>
+
+<p><strong>DECISIONVALUES</strong> specifies whether or not to include these in the 
+prediction dataset.  They are not provided if the dependent 
+variable has only two values.  If a categorical
+dependent variable has k values, there will be <code>k(k-1)/2</code>
+additional variables in the dataset.</p>
+
+<p>If <strong>WORKSPACE</strong> = CLEAR, the model is deleted
+from memory while RETAIN causes it to be available for use
+in predict mode in the current session unless the workspace
+has been otherwise cleared.  Multiple uses of predict
+mode can use the retained workspace as long as
+WORKSPACE=RETAIN is used each time.</p>
+
+<h2>OUTPUT</h2>
+
+<p><strong>FEATUREWEIGHTS</strong> specifies whether or not to display a table
+of variable weights for the model.</p>
+
+<p>&copy; Copyright IBM Corp. 1989, 2014</p>
+
+</body>
+
+</html>
+
