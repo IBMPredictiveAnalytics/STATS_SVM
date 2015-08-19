@@ -1,0 +1,413 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_SVM.R:171
+msgid "SVM"
+msgstr ""
+"SVM"
+
+#: STATS_SVM.R:172
+msgid "SVM: Warnings"
+msgstr ""
+"SVM: 경고"
+
+#: STATS_SVM.R:177
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"R %s 패키지가 필요하지만 로드할 수 없습니다."
+
+#: STATS_SVM.R:189
+msgid "Prediction requires a dataset specification for output"
+msgstr ""
+"예측을 사용하려면 출력할 데이터 세트를 지정해야 합니다."
+
+#: STATS_SVM.R:193
+msgid "A workspace specification is required for prediction"
+msgstr ""
+"예측에 대한 작업공간을 지정해야 합니다."
+
+#: STATS_SVM.R:197
+msgid "Workspace file could not be loaded"
+msgstr ""
+"작업공간 파일을 로드할 수 없습니다."
+
+#: STATS_SVM.R:204
+msgid "No SVM model was found in the specified workspace"
+msgstr ""
+"지정된 작업공간에서 SVM 모형을 찾을 수 없습니다."
+
+#: STATS_SVM.R:210
+msgid "No independent variables were specified.  At least one is required"
+msgstr ""
+"독립변수가 지정되지 않았습니다. 하나 이상의 독립변수가 필요합니다."
+
+#: STATS_SVM.R:218
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"이 프로시저를 사용하려면 활성 데이터 세트의 이름이 있어야 합니다."
+
+#: STATS_SVM.R:222
+msgid "The output dataset name must not already be in use"
+msgstr ""
+"출력 데이터 세트 이름은 아직 사용 중이지 않은 것이어야 합니다."
+
+#: STATS_SVM.R:267
+msgid "Incorrect class weights: weights must be specified as pairs of values and weights"
+msgstr ""
+"올바르지 않은 계층 가중값: 가중값은 값과 가중값 쌍으로 지정해야 합니다."
+
+#: STATS_SVM.R:278
+msgid "Prediction variables measurement levels do not match estimation variables"
+msgstr ""
+"예측 변수 측정 수준이 추정 변수와 매치하지 않습니다."
+
+#: STATS_SVM.R:315
+msgid "Ignoring workspace save request because using predict mode"
+msgstr ""
+"예측 모드를 사용한 작업공간 저장 요청을 무시합니다."
+
+#: STATS_SVM.R:345
+msgid "Tuning cannot be used if there is no dependent variable"
+msgstr ""
+"종속변수가 없으면 튜닝을 사용할 수 없습니다."
+
+#: STATS_SVM.R:374
+msgid "Dependent Variable"
+msgstr ""
+"종속변수"
+
+#: STATS_SVM.R:375
+msgid "Independent Variables"
+msgstr ""
+"독립변수"
+
+#: STATS_SVM.R:376
+msgid "SVM Type"
+msgstr ""
+"SVM 유형"
+
+#: STATS_SVM.R:377
+msgid "Kernel"
+msgstr ""
+"커널"
+
+#: STATS_SVM.R:378
+msgid "Model Source"
+msgstr ""
+"모형 소스"
+
+#: STATS_SVM.R:379
+msgid "Scale Inputs"
+msgstr ""
+"척도 입력"
+
+#: STATS_SVM.R:380
+msgid "Kernel Degree"
+msgstr ""
+"커널 차수"
+
+#: STATS_SVM.R:381
+msgid "Kernel Gamma"
+msgstr ""
+"커널 감마"
+
+#: STATS_SVM.R:382
+msgid "Kernel Coef0"
+msgstr ""
+"커널 계수 0"
+
+#: STATS_SVM.R:383
+msgid "Misclassification Cost"
+msgstr ""
+"오분류 비용"
+
+#: STATS_SVM.R:384
+msgid "Nu"
+msgstr ""
+"Nu(뉴)"
+
+#: STATS_SVM.R:385
+msgid "Epsilon"
+msgstr ""
+"엡실런"
+
+#: STATS_SVM.R:386
+msgid "Class Weights"
+msgstr ""
+"계층 가중값"
+
+#: STATS_SVM.R:387
+msgid "Number of Crossfolds"
+msgstr ""
+"중첩 수"
+
+#: STATS_SVM.R:388
+msgid "Output Dataset"
+msgstr ""
+"출력 데이터 세트"
+
+#: STATS_SVM.R:389
+msgid "Result Workspace"
+msgstr ""
+"결과 작업공간"
+
+#: STATS_SVM.R:390
+msgid "Workspace Contents"
+msgstr ""
+"작업공간 컨텐츠"
+
+#: STATS_SVM.R:391
+msgid "Model Estimation Date"
+msgstr ""
+"모형 추정 날짜"
+
+#: STATS_SVM.R:396
+msgid "<None>"
+msgstr ""
+"<없음>"
+
+#: STATS_SVM.R:400
+msgid "New"
+msgstr ""
+"새로 만들기"
+
+#: STATS_SVM.R:402
+msgid "Yes"
+msgstr ""
+"예"
+
+#: STATS_SVM.R:402
+msgid "No"
+msgstr ""
+"아니오"
+
+#: STATS_SVM.R:404
+#: STATS_SVM.R:406
+#: STATS_SVM.R:408
+#: STATS_SVM.R:409
+#: STATS_SVM.R:410
+#: STATS_SVM.R:411
+#: STATS_SVM.R:412
+#: STATS_SVM.R:413
+#: STATS_SVM.R:414
+#: STATS_SVM.R:418
+#: STATS_SVM.R:419
+msgid "NA"
+msgstr ""
+"NA"
+
+#: STATS_SVM.R:415
+msgid "None"
+msgstr ""
+"지정않음"
+
+#: STATS_SVM.R:420
+msgid "Clear"
+msgstr ""
+"지우기"
+
+#: STATS_SVM.R:420
+msgid "Retain"
+msgstr ""
+"유지"
+
+#: STATS_SVM.R:426
+msgid "Some parameters were tuned from a list of choices"
+msgstr ""
+"선택 목록의 일부 매개변수가 조정되었습니다."
+
+#: STATS_SVM.R:430
+#: STATS_SVM.R:431
+#: STATS_SVM.R:431
+msgid "Summary"
+msgstr ""
+"요약"
+
+#: STATS_SVM.R:433
+msgid "Computations done by R package e1071"
+msgstr ""
+"R 패키지 e1071에 의해 수행된 계산"
+
+#: STATS_SVM.R:436
+msgid "Error"
+msgstr ""
+"오차"
+
+#: STATS_SVM.R:437
+msgid "Dispersion"
+msgstr ""
+"산포도"
+
+#: STATS_SVM.R:438
+msgid "Parameter Tuning Performance"
+msgstr ""
+"모수 튜닝 성능"
+
+#: STATS_SVM.R:439
+msgid "Tuning Performance"
+msgstr ""
+"튜닝 성능"
+
+#: STATS_SVM.R:440
+msgid "Error is classification error or mean squared error depending on dependent variable type."
+msgstr ""
+"오차가 종속변수 유형에 따른 평균제곱 오차 또는 분류 오차입니다."
+
+#: STATS_SVM.R:441
+msgid "Parameters actually used depend on kernel choice and svm type."
+msgstr ""
+"실제로 사용되는 모수는 커널 선택항목 및 svm 유형에 따라 달라집니다."
+
+#: STATS_SVM.R:453
+msgid "Center"
+msgstr ""
+"가운데 맞춤"
+
+#: STATS_SVM.R:453
+msgid "Scale"
+msgstr ""
+"척도"
+
+#: STATS_SVM.R:454
+msgid "Variable Scaling"
+msgstr ""
+"변수 척도"
+
+#: STATS_SVM.R:455
+msgid "Scaling"
+msgstr ""
+"척도"
+
+#: STATS_SVM.R:455
+msgid "Variables"
+msgstr ""
+"변수"
+
+#: STATS_SVM.R:465
+#: STATS_SVM.R:468
+msgid "Accuracies"
+msgstr ""
+"정확도"
+
+#: STATS_SVM.R:466
+msgid "Total Accuracy"
+msgstr ""
+"전체 정확도"
+
+#: STATS_SVM.R:467
+msgid "Crossfold Accuracies"
+msgstr ""
+"중첩 정확도"
+
+#: STATS_SVM.R:475
+msgid "Total MSE"
+msgstr ""
+"전체 MSE"
+
+#: STATS_SVM.R:476
+msgid "Squared Correlation, Predicted and Actual"
+msgstr ""
+"제곱 상관, 예측 및 실제"
+
+#: STATS_SVM.R:477
+msgid "Crossfold Mean Squared Errors"
+msgstr ""
+"중첩 평균제곱 오차"
+
+#: STATS_SVM.R:478
+msgid "Mean Squared Errors"
+msgstr ""
+"평균제곱 오차"
+
+#: STATS_SVM.R:488
+#: STATS_SVM.R:489
+msgid "Feature Weights"
+msgstr ""
+"기능 가중값"
+
+#: STATS_SVM.R:490
+msgid "Number of support vectors: %s"
+msgstr ""
+"서포트 벡터 수: %s"
+
+#: STATS_SVM.R:492
+msgid "Feature weights are not produced, because there are no support vectors"
+msgstr ""
+"서포트 벡터가 없으므로 기능 가중값이 생성되지 않았습니다."
+
+#: STATS_SVM.R:503
+#: STATS_SVM.R:504
+msgid "Total"
+msgstr ""
+"총계"
+
+#: STATS_SVM.R:516
+#: STATS_SVM.R:517
+msgid "% Correct"
+msgstr ""
+"% 정확함"
+
+#: STATS_SVM.R:518
+#: STATS_SVM.R:522
+msgid "Confusion"
+msgstr ""
+"혼돈"
+
+#: STATS_SVM.R:519
+msgid "Actual"
+msgstr ""
+"실제값"
+
+#: STATS_SVM.R:520
+msgid "Fitted"
+msgstr ""
+"맞춰짐"
+
+#: STATS_SVM.R:523
+msgid "Percent Correct: %.3f"
+msgstr ""
+"정확도 퍼센트: %.3f"
+
+#: STATS_SVM.R:558
+msgid "The following predictors are missing from the input data: %s"
+msgstr ""
+"다음 예측자가 입력 데이터에서 누락되었습니다. %s"
+
+#: STATS_SVM.R:576
+msgid "Class probabilities were requested but are not available"
+msgstr ""
+"계층 확률이 요청되었지만 사용할 수 없습니다."
+
+#: STATS_SVM.R:588
+msgid "All cases have missing data.  No predictions are produced"
+msgstr ""
+"모든 케이스에 결측 데이터가 있습니다. 예측값이 생성되지 않았습니다."
+
+#: STATS_SVM.R:676
+msgid "End of procedure"
+msgstr ""
+"프로시저 끝"
+
+#: STATS_SVM.R:703
+msgid "Message Number"
+msgstr ""
+"메시지 번호"
+
+
