@@ -9,7 +9,7 @@ Description: Construct a support vector machine and use it for predict
  ression with four choices of kernels.  A grid search over the paramet
  er space can be carried out.
 Author: JKP, IBM SPSS
-Version: 1.1.4
+Version: 1.1.5
 Product-Version: 18
 Date: 5/12/14
 Plugins: R
