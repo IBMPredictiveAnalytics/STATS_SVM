@@ -1,4 +1,5 @@
 Name: STATS SVM
+Display-Name: Support Vector Machine
 Dialog-Specs: STATS_SVM.spd
 Command-Specs: STATS_SVM.xml
 Code-Files: STATS_SVM.R
